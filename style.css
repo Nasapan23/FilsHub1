@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+html, body {
+    background-color:rgb(27,27,27);
+    font-family: 'Mukta', sans-serif;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+*:focus {
+    outline: none;
+}
+.containerfp {
+    width: 35vh;
+    height: 50vh;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.register p{
+    font-size: 1.6vh;
+    color: rgb(255, 255, 255);
+}
+.register{
+    background-color: rgb(41,41,41);
+    transform: scale(1.5,1.5);
+    padding: 2.5vh;
+    border-radius: 5%;
+    border-style: hidden;
+    box-shadow: 0 0 2.5vh  	rgb(255,163,26);
+
+}
+.register h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vh;
+    margin-bottom: 1.5vh;
+    font-kerning: 1.5vh;
+}
+.register input[type=text], input[type=password] {
+    outline: none;
+    background-color:rgb(255, 255, 255);
+    -webkit-border-radius: 2vh;
+    -moz-border-radius: 2vh;
+     border-radius: 2vh;
+     border: none;
+     color: rgb(0, 0, 0);
+     width: 25vh;
+     height: 3vh;
+     padding-left: 1vh;        
+
+}
+.register input[type=text]:hover, input[type=password]:hover {
+    box-shadow: 0 0 1vh  	rgb(255,163,26);
+   }
+.register input[type=submit] {
+    background-color: rgb(255,163,26);
+    -webkit-border-radius: 2vh;
+    -moz-border-radius: 2vh;
+     border-radius: 2vh;
+     border: 1px solid rgb(255,163,26);
+     color: rgb(41,41,41);
+     width: 8vh;
+     height: 3vh;
+}
+.register input[type=submit]:hover {
+    box-shadow: 0 0 2vh  	rgb(255,163,26);
+}
+.buttonr{
+    width: 8vh;
+    height: 3vh;
+}
+.topnav {
+    margin: 0 auto;
+    position: fixed;
+    width: auto;
+    height: 5vh;
+    border-radius: 1vh;
+    background-color: rgb(255,163,26);
+    overflow: hidden;
+    margin-bottom: 1vh;
+    }
+.topnav a{
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 1.4vh 1.6vh;
+  text-decoration: none;
+  font-size: 1.7vh;
+}
+.topnav img {
+    float: left;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    margin-left: 1vh;
+}
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+.topnav form{
+    float:left;
+    text-align: center;
+    font-size: 1.7vh;
+}
+.topnav p{
+    font-size: 2vh;
+}
+.topnav input[type=submit] {
+  padding: 0.6vh;
+  margin-top: 0.8vh;
+  font-size: 1.7vh;
+  border: none;
+  -webkit-border-radius: 2vh;
+    -moz-border-radius: 2vh;
+     border-radius: 2vh;
+     color:rgb(255,163,26);
+     background-color: rgb(0, 0, 0);
+}
+.topnav input[type=submit]:hover {
+    box-shadow: 0 0 2vh  	rgb(255, 255, 255);
+}
+.logout{
+    padding-right: 20px;
+    float: left;
+}
+.wpost{
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: fixed;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 57vh;
+}
+
+.cpost input[type=text]{
+    width: 53vh;
+    height: 25vh;
+    border-radius: 2vh;
+    text-align: center;
+    /* Make the text in the form write on another line after it hits the width of the div */
+word-wrap: break-word;
+        word-break: break-all;
+    
+}
+.cpost input[type=submit]{
+    margin-top: 2vh;
+    display:flex ; 
+    margin: 1vh auto;
+    height: 5vh;
+    width: 10vh;
+    border-radius: 1vh;
+    background-color: rgb(255,163,26);
+     color: rgb(41,41,41);
+     width: 8  0;
+     height: 3vh;
+     border-style: hidden;
+     border:none;
+}
+.cpost input[type=submit]:active {
+border-style: outset;
+}
+.wpost h1 {
+    font-size: 3vh;
+    margin: 0 auto;
+    position: relative;
+    color: rgb(255, 255, 255);
+    overflow: hidden; 
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation:blink-caret 0.75s step-end infinite;
+    animation-iteration-count: infinite;
+} 
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+.cpost{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2vh;
+    background-color: rgb(41,41,41);
+    border-radius: 2vh;
+    box-shadow: 0 0 2.5vh  	rgb(255,163,26);
+
+}
+/* code the design for the post div, align the div in the center of the screen,
+ set the image in the right of the   username and the paragraph under it*/
+ .foryou{
+    text-align: center;
+    float: center;
+    margin: 0 auto;
+    margin-top: 2vh;
+    height: auto;
+    width: 50vh;
+    /* background-color: rgb(118, 118, 118); Background color for main post div */
+    overflow:visible;
+    margin-bottom: 3vh;
+    
+ }
+ .post{
+    text-align: center;
+    margin: 0.5vh auto;
+    height: auto;
+    width: 50vh;
+    overflow: auto;
+    background-color: white;
+    border-radius: 30vh;
+    margin-bottom: 0.5vh;
+ }
+ .post img[alt="profile"]{
+    margin-top: 0.3vh;
+    float: left;
+    width: 4vh;
+    height:4vh;
+    border-radius: 50%;
+    margin-left: 1.5vh;
+    border:0.2vh solid rgb(255,163,26);
+    margin-bottom: 0;
+ }
+ .post a{
+    float: left;
+    margin-top:1vh;
+    margin-left: 1.5vh;
+    color: black;
+    font-size: 2vh;
+    font-weight: bold;
+    text-decoration: none;
+ }
+ .posttext {
+/* Make this div display right under the post div */
+margin: 0 auto;
+height: auto;
+width: 50vh;
+overflow: scroll;
+overflow-y: scroll;
+background-color: white;
+border-radius: 2vh;
+ }
+ .posttext p{
+    font-size:2vh;
+    margin: 1vh;
+ }
+ .postborder{
+    margin: 0 auto;
+    height: auto;
+    width: 50vh;
+    overflow: hidden;
+    border-radius: 2vh;
+    margin-top: 0.5vh;
+    padding:1vh;
+    background-color: rgb(41,41,41);
+    box-shadow: 0 0 2.5vh  	rgb(255,163,26);
+ }
+.commentpost{
+    margin: 0 auto;
+    height: auto;
+    width: 30vh;
+    overflow: hidden;
+    border-radius: 4vh;
+    margin-top: 0.5vh;
+}
+/* Make the input form text bigger and rounder in div comment */
+.comment {
+    margin: 0 auto;
+    height: auto;
+    width: 20vh;
+    overflow: hidden;
+    border-radius: 2vh;
+    margin-top: 0.5vh;
+    padding:0.5vh;
+    background-color: white;
+}
+.comment p{
+    font-size: 1.5vh;
+    background-color: aqua;
+    border-radius:2vh;
+}
+.comment a{
+    font-size: 1.5vh;
+    color: black;
+}
+.commentpost input[type=text]{
+    width: 25vh;
+    height: 3vh;
+    border-radius: 2vh;
+    text-align: center;
+}
+/* Make the sumbit overlap the input text form */
+.commentpost input[type=submit]{
+    border-top: 0vh;
+    width:auto;
+    height: auto;
+    border-radius: 2vh;
+}
+.sprofile{
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    float: center;
+    margin: 0 auto;
+    margin-top: 2vh;
+    height: auto;
+    width: 70vh;
+    overflow:visible;
+    padding:1vh;
+    border-radius: 2vh;
+    margin-bottom: 1vh;
+}
+.sprofile h1{
+    color:white;
+}
+/* css for post page */
+.postpage{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+     transform: translate(-50%, -50%);
+    text-align: center;
+    float: center;
+    margin: 0 auto;
+    width: 50vh;
+    margin:5vh auto;
+    height: auto;
+    background-color: rgb(41,41,41);
+    border-radius: 2vh;
+    padding: 1vh;
+    box-shadow: 0 0 2.5vh  	rgb(255,163,26);
+}
+.postheader{
+    margin: 0 auto;
+height: auto;
+width: 50vh;
+overflow: scroll;
+overflow-y: scroll;
+background-color: white;
+border-radius: 4vh;
+margin-bottom: 0.5vh;
+}
+.postheader img{
+    margin-top: 0.3vh;
+    float: left;
+    width: 4vh;
+    height:4vh;
+    border-radius: 50%;
+    margin-left: 1.5vh;
+    border:1px solid rgb(255,163,26);
+    margin-bottom: 0;
+ }
+ .postheader h1{
+    float: left;
+    margin-top:1vh;
+    margin-left: 1.5vh;
+    color: black;
+    font-size: 2vh;
+    font-weight: bold;
+    text-decoration: none;
+ }
+ .postbody{
+margin: 0 auto;
+height: auto;
+width: 50vh;
+overflow: scroll;
+overflow-y: scroll;
+background-color: white;
+border-radius: 4vh;
+ }
+ .postbody p{
+    font-size:2vh;
+ }
+ .postfooter{
+        margin: 0 auto;
+        height: auto;
+        width:50vh;
+        background-color: white;
+        border-radius: 4vh;
+        margin-top: 0.5vh;
+}
+.postfooter h1{
+    font-size: 2vh;
+    color: black;
+    margin-top: 0.1vh;
+}
+.postcommenting {
+    margin: 0 auto;
+    height: auto;
+    width: 50vh;
+    overflow: hidden;
+    background-color: rgb(255,163,26);
+    border-radius: 4vh;
+}
+.postcommenting input[type=text]{
+    font-size: 2vh;
+    width: 35vh;
+    height: 9vh;
+    border-radius: 2vh;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+}
+/* Make the sumbit overlap the input text form */
+.postcommenting input[type=submit]{
+    border-top: 0vh;
+    width:10vh;
+    height: 4vh;
+    border-radius: 2vh;
+    margin-top:0.5vh;
+    background-color: rgb(255,163,26);
+     border-radius: 2vh;
+     border: 1px solid rgb(255,163,26);
+     color: rgb(41,41,41);
+     width: 8  0;
+     height: 3vh;
+}
